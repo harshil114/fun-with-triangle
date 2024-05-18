@@ -44,7 +44,6 @@ body {
 
 .main {
     background-color: rgba(255, 255, 255, 0.575);
-    /* background-color: aqua; */
 }
 
 .main__container {
@@ -70,3 +69,22 @@ body {
 .main__container-content-details p a{
     color: black;
 }
+.footer{
+    background-color: rgba(255, 255, 255, 0.575);    
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__container-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer__container-list img{
+    margin: 0 1rem;
+    height: 45px;
+    width: 45px;
+}
+
