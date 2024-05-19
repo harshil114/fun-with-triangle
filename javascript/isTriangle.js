@@ -21,15 +21,17 @@ function isTriangle(){
     const side2 = Number(inputs[1].value);
     const side3 = Number(inputs[2].value);
 
-    if(side1 > 0 && side2 > 0 && side3 > 0){
-        if(totalSum === 180){           
+    if(side1 < 0 || side2 < 0 || side3 < 0){
+        showMessage("Negative values are not allowed","red")
+    }else if(side1 > 0 && side2 > 0 && side3 > 0){
+        if(totalSum === 180){  
             showMessage("Yes,it forms a Triangle");
         }else{
             showMessage("No ,it's not a Triangle.")
         }
     }else{
-        showMessage("All the fields are required","red")
-    }   
+        showMessage("All the fields are required","red");
+    }
 }
 
 button.addEventListener("click",isTriangle);
