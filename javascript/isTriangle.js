@@ -21,16 +21,19 @@ function isTriangle(){
     const side2 = Number(inputs[1].value);
     const side3 = Number(inputs[2].value);
 
-    if(side1 < 0 || side2 < 0 || side3 < 0){
-        showMessage("Negative values are not allowed","red")
-    }else if(side1 > 0 && side2 > 0 && side3 > 0){
-        if(totalSum === 180){  
-            showMessage("Yes,it forms a Triangle");
-        }else{
-            showMessage("No ,it's not a Triangle.")
+    
+    if (side1 === 0 && side2 === 0 && side3 === 0) {
+        showMessage("All fields are required", "red");
+    } else if (side1 < 0 || side2 < 0 || side3 < 0) {
+        showMessage("Negative values are not allowed", "red");
+    } else if (side1 > 0 && side2 > 0 && side3 > 0) {
+        if (totalSum === 180) {
+            showMessage("Yes, it forms a Triangle.");
+        } else {
+            showMessage("No, it is not a Triangle.");
         }
-    }else{
-        showMessage("All the fields are required","red");
+    } else {
+        showMessage("All fields must be greater than 0", "red");
     }
 }
 
