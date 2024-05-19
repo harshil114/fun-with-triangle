@@ -73,6 +73,15 @@ body {
 .main__container-content-details p a{
     color: black;
 }
+.quiz-form--content p{
+    font-weight: 500;
+}
+.quiz-form--content input{
+    margin-right:0.7rem;
+}
+.quiz-form--content label{
+    margin-right: 2rem;
+}
 .content-details--input{
     display: flex;
     flex-direction: column;
